@@ -1,0 +1,163 @@
+[
+	{
+		"id" : 1,
+		"surveyVersion" : 1,
+		"question" : "How many times did you use opioids today? (By this, we mean how many times did you use: heroin, fentanyl or prescription opioids to get high?)",
+		"answerForm" : "Multiple Choice",
+		"answers" : "0,1,2, 3,4,5,6,7,8,9,10,>10",
+		"switch" : "12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1"
+	},
+	{
+		"id" : 2,
+		"surveyVersion" : 1,
+		"question" : "Did you use at any location outside of your home today? ",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Yes,No",
+		"switch" : "2, 5"
+	},
+	{
+		"id" : 3,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] place you used opioids today that was outside of your own home, where was it?",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Someone Else's House,Street/Alley,Park,Abandoned Building,Public Bathroom,Car,Other",
+		"switch" : "4,4,4,4,4,4,3"
+	},
+	{
+		"id" : 4,
+		"surveyVersion" : 1,
+		"question" : "You selected 'Other' for the last question (where was the [random] place that you used opioids?). Type in your answer to that question.",
+		"answerForm" : "Text",
+		"answers" : "",
+		"switch" : "4"
+	},
+	{
+		"id" : 5,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, please enter the cross-streets of that location:",
+		"answerForm" : "Text",
+		"answers" : "Map",
+		"switch" : "5"
+	},
+	{
+		"id" : 6,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, what drugs did you use at this location? Select all that apply.",
+		"answerForm" : "Multi-Select",
+		"answers" : "Heroin,Fentanyl,Powdered Cocaine,Crack Cocaine,Prescription Opiates,Buprenorphine/Bupes,Methamphetamine,Marijuana ",
+		"switch" : "6,6,6,6,6,6,6,6"
+	},
+	{
+		"id" : 7,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, were you using alone?",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Yes,No",
+		"switch" : "7,8"
+	},
+	{
+		"id" : 8,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, which of these applied to you?",
+		"answerForm" : "Matrix",
+		"answers" : "I told someone I was using,I asked someone to check-in on me,used fentanyl test strips,had narcan on me,used a small amount first to test strength of drugs |yes,no",
+		"switch" : "11"
+	},
+	{
+		"id" : 9,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, how many people were injecting (including yourself)?",
+		"answerForm" : "Multiple Choice",
+		"answers" : "0,1,2,3,4,5,6,7,8,9,10,>10",
+		"switch" : "11,10,9,9,9,9,9,9,9,9,9,9"
+	},
+	{
+		"id" : 10,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, did you see or do any of these behaviors?",
+		"answerForm" : "Matrix",
+		"answers" : "share cookers,share syringes,used fentanyl test strips,talk about how to prevent an overdose,used a small amount first to test strength of drugs |Yes,No,Don't Know",
+		"switch" : "10,10,10,10,10"
+	},
+	{
+		"id" : 11,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, were these things available?",
+		"answerForm" : "Matrix",
+		"answers" : "narcan,clean cooker,clean water,clean syringes,fentanyl test strips |Yes- I Had It,Yes- Someone Else Had It,No,Don’t Know ",
+		"switch" : "11,11,11,11,11"
+	},
+	{
+		"id" : 12,
+		"surveyVersion" : 1,
+		"question" : "Thinking about the [random] time you used opioids today, how many people were close enough to give you Narcan or call 911 if you needed it? For example, in the same house/building or on the same block?",
+		"answerForm" : "Number",
+		"answers" : "",
+		"switch" : "12"
+	},
+	{
+		"id" : 13,
+		"surveyVersion" : 1,
+		"question" : "Did you witness an overdose today?",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Yes,No",
+		"switch" : "13,19"
+	},
+	{
+		"id" : 14,
+		"surveyVersion" : 1,
+		"question" : "Please enter the cross-streets of the location where you witnessed an overdose today:",
+		"answerForm" : "Text",
+		"answers" : "Map",
+		"switch" : "14"
+	},
+	{
+		"id" : 15,
+		"surveyVersion" : 1,
+		"question" : "Who was the person who overdosed? (select one option) ",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Drug buddy, friend,family member,partner,associate,myself,someone I don't know",
+		"switch" : "15,15,15,15,15,15,15"
+	},
+	{
+		"id" : 16,
+		"surveyVersion" : 1,
+		"question" : "Was 911 called?",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Yes,No,Don't Know",
+		"switch" : "16,16, 16"
+	},
+	{
+		"id" : 17,
+		"surveyVersion" : 1,
+		"question" : "Did anyone give the person Narcan?",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Yes,No,Don't Know",
+		"switch" : "17,18,18"
+	},
+	{
+		"id" : 18,
+		"surveyVersion" : 1,
+		"question" : "Who administered Narcan?",
+		"answerForm" : "Multi-Select",
+		"answers" : "Paramedics/police,Me,Someone Else",
+		"switch" : "18,18,18"
+	},
+	{
+		"id" : 19,
+		"surveyVersion" : 1,
+		"question" : "Did the person wake up?",
+		"answerForm" : "Multiple Choice",
+		"answers" : "Yes,No,Don't Know",
+		"switch" : "19, 19, 19"
+	},
+	{
+		"id" : 20,
+		"surveyVersion" : 1,
+		"question" : "How are you feeling today?",
+		"answerForm" : "Emoji",
+		"answers" : "1, 2, 3, 4, 5",
+		"switch" : "-1, -1, -1, -1, -1"
+	}
+]
+
