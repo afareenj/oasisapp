@@ -1,0 +1,28 @@
+/* Helps retro fit common content elemets from older templates converted to the new look and feel.
+   Found here: ~/_templates/_includes/centers-update-shim.css
+  
+  - Jonathan :: 03.02.2015 */
+
+.Header_1 {color: #202020;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 0 25px;}
+  
+.Header_2 {
+  color: #242D06;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.Header_3 {
+  color: #242D06;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 5px;
+}
+

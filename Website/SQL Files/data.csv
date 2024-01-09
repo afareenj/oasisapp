@@ -1,0 +1,22 @@
+id,surveyVersion,question,answerForm,answers,switch
+1,1,"Did you use drugs today? By this, we mean: heroin, cocaine, fentanyl, or prescription opioids to get high?",Multiple Choice,"Yes, No","1,14"
+2,1,How many times did you use drugs today?,Number,Change,2
+3,1,"Thinking about the [random] place that you used drugs, where was it?",Multiple Choice,"Your House, Someone Else's House, Street/Alley, Park, Abandoned Building, Public Bathroom, Car, Other","5,4,4,4,4,4,4,3"
+4,1,You selected 'Other' for the last question (where was the [random] place that you used drugs?). Type in your answer to that question.,Text,,4
+5,1,"Thinking about the [random] time, please enter the cross-streets of the location where you used drugs today:",Text,Map,5
+6,1,"At this location today, what drug did you use? Select all that apply.",Multi-Select,"Heroin, Fentanyl, Powdered Cocaine, Crack Cocaine, Prescription Opiates, Buprenorphine/Bupes, Methamphetamine, Marijuana ","6,6,6,7,7,6,6,7"
+7,1,"Thinking about the [random] time, did you inject drugs at this location today?",Multiple Choice,"Yes, No","7,8"
+8,1,"Thinking about the [random] time, were other people around you injecting drugs when you were there?",Multiple Choice,"Yes, No","10,9"
+9,1,"Thinking about the [random] time, were other people around you injecting drugs when you were there?",Multiple Choice,"Yes, No","10,10"
+10,1,"Thinking about the [random] time, which of these applied to you?",Matrix,"other people were nearby, I told someone I was using, I asked someone to check-in on me, used fentanyl test strips, had narcan on me, used a small amount first to test potency | yes, no",13
+11,1,"Thinking about the [random] time, how many people were close enough to give you Narcan or call 911 if you needed it? For example, in the same house/building or on the same block? ",Number,,11
+12,1,"Thinking about the [random] time, how many people were injecting (including yourself)?",Number,,12
+13,1,"Thinking about the [random] time, did you see or do any of these behaviors?",Matrix,"share cookers, share syringes, used fentanyl test strips, talk about how to prevent an overdose, used a small amount first to test potency | Yes, No, Don't Know",13
+14,1,"Thinking about the [random] time, were these things available?",Matrix,"narcan, clean cooker, clean water, clean syringes | Yes- I Had It, Yes- Someone Else Had It, No, Don’t Know ",14
+15,1,Did you witness an overdose today or overdose yourself?,Multiple Choice,"Yes, No","15,-1"
+16,1,Please enter the cross-streets of the location where you witnessed an overdose today:,Text,Map,16
+17,1,Who was this person? (select one option) ,Multiple Choice,"Drug buddy, friend, family member, partner, associate, myself","17,17,17,17,17,17"
+18,1,Was 911 called?,Multiple Choice,"Yes, No, Don't Know","18,18,18"
+19,1,Did anyone give the person Narcan?,Multiple Choice,"Yes, No, Don't Know","19,20,20"
+20,1,Who administered Narcan?,Multiple Choice,"Paramedics/police, Me, Someone Else","20,20,20"
+21,1,Did the person wake up?,Multiple Choice,"Yes, No, Don't Know","-1,-1,-1"

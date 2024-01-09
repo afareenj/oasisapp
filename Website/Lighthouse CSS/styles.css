@@ -1,0 +1,211 @@
+input {
+    border: 2px solid #000;
+    margin-top: 0px;
+    border-radius: 20px;
+}
+
+#error {
+  color: red;
+  font-size: 10px;
+  align-items: center;
+  margin-top: -1%;
+  margin-left: 17%;
+  margin-right: 17%;
+  margin-bottom: -1%;
+  display: none;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.inline {
+  display: flex;
+
+}
+
+#input {
+  display: block;
+}
+
+#submitted {
+  display: block;
+  color: green;
+  margin-left: 25%;
+}
+
+#endgif {
+  display: block;
+  margin-left: 15%;
+}
+
+#overdose {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  background-color: #25497e;
+  padding: 1% 10%;
+  color: white;
+  border-radius: 10px;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 20%;
+  text-decoration: none;
+  display: inline-block;
+  padding: 4px 8px;
+}
+
+
+#injection {
+  margin-left: 25%;
+  padding: 1% 10%;
+  background-color: #25497e;
+  color: white;
+  border-radius: 10px;
+}
+
+#back {
+  background-color: #25497e;
+  color: white;
+  border-radius: 10px;
+}
+
+form[name="loginInfo"] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 30%;
+}
+
+form[name="mapInfo"] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.table {
+  text-align: center;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin-top: 5px;
+}
+
+input[id="Name"] {
+  width: 50%;
+}
+input[id="ID"] {
+  width: 50%;
+}
+input[value="Login"] {
+  justify-content: center;
+  width: 40%;
+  margin-left: 5%;
+  background-color: #25497e;
+  color: white;
+}
+
+input[value="Login"]:hover {
+  background-color: black!important;
+}
+
+
+
+#pe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+table {
+  margin-top: 0px;
+  width: 100%;
+}
+
+.w3-xlarge {
+  color:#black!important;
+  background-color:#fff!important;
+}
+
+button:hover{
+  background-color:#black!important
+}
+
+
+#updown {
+  height:30px;
+  display:inline-block;
+}
+
+.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}
+
+@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/8c5f68/00000000000000003b9ad1b1/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.com/af/8c5f68/00000000000000003b9ad1b1/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.com/af/8c5f68/00000000000000003b9ad1b1/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/dcab3a/00000000000000003b9ad1b2/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.com/af/dcab3a/00000000000000003b9ad1b2/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.com/af/dcab3a/00000000000000003b9ad1b2/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/b4e997/00000000000000003b9ad1bb/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.com/af/b4e997/00000000000000003b9ad1bb/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.com/af/b4e997/00000000000000003b9ad1bb/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/3b47e3/00000000000000003b9ad1bc/27/l?subset_id=2&fvd=i6&v=3) format("woff2"),url(https://use.typekit.com/af/3b47e3/00000000000000003b9ad1bc/27/d?subset_id=2&fvd=i6&v=3) format("woff"),url(https://use.typekit.com/af/3b47e3/00000000000000003b9ad1bc/27/a?subset_id=2&fvd=i6&v=3) format("opentype");font-weight:600;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/aa8afb/00000000000000003b9ad1b9/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.com/af/aa8afb/00000000000000003b9ad1b9/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.com/af/aa8afb/00000000000000003b9ad1b9/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.com/af/9cba47/00000000000000003b9ad1ba/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.com/af/9cba47/00000000000000003b9ad1ba/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.com/af/9cba47/00000000000000003b9ad1ba/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}
+
+#instructions {
+  display: center;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20%;
+}
+
+#example_cross{
+  font-family: proxima-nova,sans-serif;
+  font-size: 12px;
+  line-height: 1.3;
+  color: #222;
+}
+
+#clear{
+  background: #f8f9fb;
+  border: 1px solid #d0d0d0;
+  color: #4c4c4c;
+  float: left;
+  font-family: proxima-nova,sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 9px 10px;
+  border-radius: 20px;
+  margin-left: -2%
+}
+
+#reverse_entry{
+  height: 30px;
+  display:inline-block;
+  background-color: #386392;
+  display:inline-block;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+#reversal_img{
+  height: 30px;
+  display:inline-block;
+}
+
+#reversal_words{
+  height: 30px;
+  display:inline-block;
+  color: white;
+}
+
+.bodyDiv1 {
+  position: absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.Body_Text {
+  width:95%;height:2px;color:rgb(102, 102, 0);background-color:rgb(102, 102, 0);text-align:center;
+}
+
+
