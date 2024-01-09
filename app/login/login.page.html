@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-row class="large">
+      <ion-col class="text-center">
+      Johns Hopkins University
+      </ion-col>
+    </ion-row>
+    <ion-row class="small">
+      <ion-col class="text-center">
+        Lighthouse Studies at Peer Point
+        </ion-col>
+        </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="back">
+  <ion-row class="medium">
+  <p class="text-center">
+  Press the button below to begin the survey.
+  </p>
+  </ion-row>
+
+      <!-- <ion-card>
+        <ion-item>
+        <img src="../../assets/imgs/pic.jpeg" />
+        <ion-card-header>
+          <ion-card-subtitle>Report</ion-card-subtitle>
+          <ion-card-title>Survey</ion-card-title>
+        </ion-card-header>
+        </ion-item>
+        <ion-card-content>
+          Press the button below to begin the survey.
+        </ion-card-content>
+      </ion-card>
+
+      <ion-row>
+      <img src="../../assets/imgs/pic.jpeg"/>
+      </ion-row> -->
+    <ion-row>
+      <ion-button (click)="goToSurvey()" expand="block">Click to Begin Survey</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="settings()" expand="block" color="medium" class="settingsbutton">SETTINGS</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="previousentries()" expand="block" color="medium">PREVIOUS ENTRIES</ion-button>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="home()" expand="block" color="danger">SIGN OUT</ion-button>
+    </ion-row>
+    <div class="footerspace"></div>
+
+</ion-content>

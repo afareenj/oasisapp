@@ -1,0 +1,37 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Hotspot</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content [fullscreen]="true">
+<!-- TODO:// we need a new logo -->
+
+  <img height="40%" src="../../assets/imgs/jhulogo.png"/>
+    <div class="toolformat"></div>
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()" autocomplete="off">
+    <div class="input-group">
+      <ion-item>
+        <ion-input formControlName="name" type="text" placeholder="Username" autocomplete="off" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input formControlName="id" [type]="element" placeholder="Password" autocomplete="off" required></ion-input>
+        <ion-icon slot="end" [name]="password" (click)="togglePassword()"></ion-icon>
+      </ion-item>
+    </div>
+
+    <ion-button type="submit" expand="block" (click)="login()">Log in</ion-button>
+    <ion-button [routerLink]="['/forgotid']" type="button" expand="block" color="forgotidbutton" fill="clear">Forgot Password?
+    </ion-button>
+
+    <!--ion-button [routerLink]="['/tabs/tab2']" expand="block" color="tertiary">
+      <ion-icon name="help-buoy" slot="start"></ion-icon>
+      Find NARCAN
+    </ion-button-->
+    <!---ion-button [routerLink]="['/tabs/tab3']" expand="block" color="tertiary">
+      <ion-icon name="medkit" slot="start"></ion-icon>
+      Find COVID-19 Test
+    </ion-button--->
+  </form>
+</ion-content>

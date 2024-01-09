@@ -1,0 +1,29 @@
+.toolformat {
+  margin-top: 20px;
+}
+
+
+ion-content {
+    --padding-top: 30%;
+    --padding-start: 10%;
+    --padding-end: 10%;
+    --background: #ecfeff;
+    //--background: url('https://images.unsplash.com/photo-1536431311719-398b6704d4cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80') 0 0/100% 100% no-repeat;
+}
+
+.forgotidbutton {
+    --color: black;
+}
+
+.input-group {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+img {
+  align-items: center;
+  margin: auto;
+  display: block;
+}

@@ -1,0 +1,83 @@
+.back {
+    height: 100%;
+    --background: #ecfeff;
+    /*background-image: url('../../assets/imgs/lighthouse1.png');
+    background-repeat: no-repeat;*/
+}
+.settingsbutton {
+  margin-top: 80%;
+}
+.color {
+    background: var(--ion-color-primary) !important;
+    color: white;
+}
+
+.toolformat {
+    margin-top: 70px;
+    background: var(--ion-color-primary) !important;
+    color: white;
+}
+
+.buttonspace {
+    margin-top: 20px;
+}
+
+.footerspace {
+    margin-left: 25px;
+}
+
+.footerlabel {
+    margin-left: 10px;
+    text-align: left;
+}
+
+ion-row {
+  text-align: center;
+  margin: 10%;
+  align-items: center;
+  margin-bottom: 0%;
+  margin-top: 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+.large{
+  margin-top: 7%;
+  margin-bottom: 0%;
+  font-size: 20px !important;
+}
+
+.small{
+  margin-top: 0%;
+  font-size: 12px !important;
+  margin-bottom: 3%;
+}
+
+.medium{
+  margin-top: 3%;
+  font-size: 14px !important;
+}
+
+ion-button{
+    width: 100%;
+}
+
+img{
+    width: 30%;
+    height: 30%;
+    --webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.center {
+  display: inline-grid;
+  position: relative;
+  top: 30%;
+  --webkit-transform: translateY(-30%);
+  --moz-transform: translateY(-30%);
+  --o-transform: translateY(-30%);
+  --ms-transform: translateY(-30%);
+  transform: translateY(-30%);
+  justify-content: center;
+  align-items: center;
+}

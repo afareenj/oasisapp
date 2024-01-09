@@ -1,0 +1,12 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+  }
+
+.card {
+  --background: var(--ion-color-primary);
+  --color: white;
+}

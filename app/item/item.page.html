@@ -1,0 +1,254 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+       <ion-icon name="arrow-back"></ion-icon>
+     </ion-button>
+    </ion-buttons>
+    <ion-title class="title">{{ title }}</ion-title>
+  </ion-toolbar>
+  <ion-progress-bar class="progress-bar" color="secondary" value="{{progress}}"></ion-progress-bar>
+</ion-header>
+
+
+<ion-content>
+  <form (keyup.enter)="$event.preventDefault()" (keydown.enter)="$event.preventDefault()" [formGroup]="surveyForm" (ngSubmit)="submitForm()">
+  <div formArrayName="surveyDiv">
+  <div *ngFor="let item of input; let i = index">
+  <ng-container *ngIf= "item.id == input[pageNum].id">
+  <ion-list>
+  <!-- <div *ngFor="let item of items; let i = index"> -->
+  <ion-row class="rowsNormal">
+    <ion-col class="title">
+    {{ item.id }}. {{ item.question }}
+    </ion-col>
+  </ion-row>
+  <ion-row class="rowsNormal">
+    <ion-col>
+  <!--Text-->
+    <ng-container *ngIf= "item.answerForm == 'Text' && item.answers != 'Map'">
+    <ion-input clearInput="true" formControlName="{{i}}" name="selected" type="text" placeholder=" Enter Text" required></ion-input>
+    <ion-row>
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </ng-container>
+    <!--Map-->
+    <ng-container *ngIf= "item.answerForm == 'Text' && item.answers == 'Map'">
+      <!--ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="UpdateSearchResults()" placeholder="Search Cross-Streets"  (ionClear)="ClearAutocomplete()"></ion-searchbar-->
+      <ion-input clearInput="true" formControlName="{{i}}" name="selected" type="text" placeholder="Search Cross-Streets" (ionInput)="UpdateSearchResults()" (ionClear)="ClearAutocomplete()" value="{{this.address}}"></ion-input>
+      <ion-row>
+        <small *ngIf="showError == 'true'" class="error-message">Please enter an address.</small>
+      </ion-row>
+      <ion-row class="rowsNormal">
+        <ion-col></ion-col>
+        <ion-col></ion-col>
+      </ion-row> 
+      <ion-list *ngIf="this.noNetwork == 'false'" [hidden]="autocompleteItems.length == 0">
+        <ion-item *ngFor="let item of autocompleteItems" tappable (click)="SelectSearchResult(item)">
+          {{ item.description }}
+        </ion-item>
+      </ion-list>
+      <ion-row>
+        Selected Location: {{ formattedAddress }} .
+      </ion-row>
+      <ion-row></ion-row>
+      <div *ngIf="this.noNetwork == 'false' && item.answers == 'Map'" #map id="map">
+      </div>
+    </ng-container>
+<!--Number-->
+   <ng-container *ngIf= "item.answerForm == 'Number'">
+    <ion-input clearInput="true" formControlName="{{i}}" name="selected" type="number" min="0" placeholder=" Enter Number" required></ion-input>
+    <ion-row>
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </ng-container>
+<!--Emoji>
+<ng-container *ngIf= "item.answerForm == 'Emoji'">
+  <ion-input clearInput="true" formControlName="{{i}}" name="selected" type="number" min="0" placeholder=" Enter Number" required></ion-input>
+  <ion-row>
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small>
+  </ion-row>
+    
+</ng-container-->
+<ng-container *ngIf= "item.answerForm == 'Emoji'">
+  <ion-radio-group formControlName="{{i}}" allow-empty-selection="true">
+
+  <ion-item *ngFor="let i of [1,2,3,4,5]" lines="none">
+    <ion-radio mode="md" value="{{i}}"> </ion-radio>
+    <img height="80%" id="emojipic" src="{{'../../assets/imgs/emoji/emoji' + i + '.png'}}"/>
+    
+  </ion-item>
+
+  </ion-radio-group>
+  <ion-row>
+  <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+  </ng-container>
+<!--Dropdown-->
+    <ng-container *ngIf= "item.answerForm == 'Dropdown'">
+      <ion-select formControlName="{{i}}" placeholder="Select One">
+        <ion-select-option *ngFor="let i of item.answers;">{{ i }}</ion-select-option>
+      </ion-select>
+      <ion-row>
+      <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+      </ng-container>
+<!--Multiple Select Checkbox-->
+  <ng-container *ngIf= "item.answerForm == 'Multi-Select'">
+    <ion-list formArrayName="{{i}}">
+     <ion-item *ngFor="let j of item.answers; let m = index">
+      <ion-checkbox name="{{j}}" formControlName="{{m}}" slot="start"></ion-checkbox>
+           <ion-label>{{ j }}</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-row>
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+  </ng-container>
+  <!--Multiple Select Dropdown-->
+    <!-- <ng-container *ngIf= "item.answerForm == 'Multi-Select'">
+      <ion-select formControlName="{{i}}" placeholder="Select Multiple" multiple="true">
+        <ion-select-option *ngFor="let i of item.answers">{{ i }}</ion-select-option>
+      </ion-select>
+        <ion-row>
+        <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </ng-container> -->
+  <!--Toggle Numbers-->
+    <ng-container *ngIf= "item.answerForm == 'Toggle'">
+    <ion-range formControlName="{{i}}" dualKnobs="false" min="1" max="3" step="1" snaps="true" ticks="true" color="secondary">
+      <ion-label> 1</ion-label>
+      <ion-label> 10</ion-label>
+    </ion-range>
+    <ion-row>
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </ng-container>
+
+    <!--Multiple Choice-->
+    <ng-container *ngIf= "item.answerForm == 'Multiple Choice'">
+    <ion-radio-group formControlName="{{i}}" allow-empty-selection="true">
+
+    <ion-item *ngFor="let i of item.answers" lines="none">
+      <ion-radio mode="md" value="{{i}}"> </ion-radio>
+      <span class="text">{{ i }}</span>
+    </ion-item>
+
+    </ion-radio-group>
+    <ion-row>
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </ng-container>
+    </ion-col>
+    </ion-row>
+    
+  <!--Matrix-->
+  <ng-container formArrayName="{{i}}" class="inventory-content reports-table" *ngIf= "item.answerForm == 'Matrix'">
+    <ion-grid>
+      <!--ion-row class="headers">
+        <ion-col size="6" class="single-border">
+        </ion-col>
+        <ng-container *ngIf="!orientation">
+        <ion-col  *ngFor="let h of item.answers.ans" class="single-border">
+          {{h}}
+        </ion-col>  </ng-container>
+        <ng-container *ngIf="orientation">
+        <ion-col  *ngFor="let h of item.answers.ans" class="single-border2">
+          {{h}}
+        </ion-col>  </ng-container>
+      </ion-row-->
+<ng-container *ngFor="let q of item.answers.questions; let p = index">
+  <ion-radio-group class="content" grid formControlName="{{p}}" allow-empty-selection="true">
+    <ion-row class="even">
+      <ion-col class="textSize"> {{ q }} </ion-col>
+    </ion-row>
+    <!--ion-item *ngFor="let h of item.answers.ans; let j = index" lines="none">
+      <ion-radio mode="md" value="{{j}}"> </ion-radio>
+      <span class="text">{{ h }}</span>
+    </ion-item-->
+    <ion-row class="even">
+    <ion-col *ngFor="let h of item.answers.ans; let j = index">
+      <ion-item>
+      <ion-radio mode="md" value="{{j}}"> </ion-radio>
+      <span class="text">{{ h }}</span></ion-item>
+    </ion-col>
+    </ion-row>
+
+  </ion-radio-group>
+      <!---ion-radio-group class="content" grid allow-empty-selection="true" formControlName="{{p}}">
+        <ion-row class="even">
+          <---ion-col *ngIf="!orientation" size="16" class="textSize"> {{ q }} </ion-col>
+          <ion-col *ngIf="orientation" size="16" class="textSize2"> {{ q }} </ion-col--->
+          <!--ion-col class="textSize"> {{ q }} </ion-col>
+        </ion-row>
+        <ion-row class="even">
+          <ion-col  *ngFor="let h of item.answers.ans; let j = index">
+            <ion-label>
+            <ion-radio class="matrixradio" mode="md" value="{{j}}"> </ion-radio>
+            <br>
+            <--label htmlFor="rad1">{{h}}</label-->
+            <!--span class="textSize2">{{ h }}</span></ion-label>
+          </ion-col>
+         </ion-row>
+
+      </ion-radio-group-->
+      </ng-container>
+    </ion-grid>
+      <ion-row>
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </ng-container>
+
+    <!--Checkbox Yes/No-->
+    <ng-container *ngIf= "item.answerForm == 'Yes/No'">
+    <ion-radio-group formControlName="{{i}}" allow-empty-selection="true" name="radio-group">
+    <ion-row class="even">
+    <ion-col></ion-col>
+    <ion-col>
+      <ion-radio mode="md"value="Yes"> </ion-radio>
+      <span class="text"> Yes </span>
+    </ion-col>
+    <ion-col></ion-col>
+    <ion-col>
+      <ion-radio mode="md"value="No"> </ion-radio>
+      <span class="text"> No </span>
+    </ion-col>
+    <ion-col></ion-col>
+    </ion-row>
+    </ion-radio-group>
+    <ion-row class="even">
+    <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </ng-container>
+    <!--Checkbox Yes/No Explain-->
+    <div formArrayName="{{i}}" *ngIf= "item.answerForm == 'Yes/No Explain'">
+      <ion-radio-group formControlName="0" allow-empty-selection="true">
+      <ion-row class="even">
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-radio mode="md" value="Yes"> </ion-radio>
+        <span class="text"> Yes </span>
+      </ion-col>
+      <ion-col></ion-col>
+      <ion-col>
+        <ion-radio mode="md" value="No"> </ion-radio>
+        <span class="text"> No </span>
+      </ion-col>
+      <ion-col></ion-col>
+      </ion-row>
+      </ion-radio-group>
+      <ion-row class="even">
+      <!--how long is explanation?-->
+      <ion-input clearInput="true" name="selected" formControlName="1" type="text" placeholder="Explain" required></ion-input>
+    </ion-row> <ion-row class="even">
+      <small *ngIf="errorsPage[0][i][0]" class="error-message">{{ errorsPage[0][i][1] }}</small></ion-row>
+    </div>
+  <!-- </div> -->
+
+  </ion-list>
+
+  <ion-row>
+    <ion-col></ion-col>
+     <ion-col>
+       <!-- type="submit" [disabled]="!surveyForm.invalid" -->
+         <ion-button expand="full" shape="round" size="default" *ngIf="!(pageNum == (input.length - 1))" (click)="next()">Next</ion-button>
+         <ion-button expand="full" shape="round" size="default" *ngIf="pageNum == (input.length-1)" (click)="next()">Submit</ion-button>
+     </ion-col>
+     <ion-col></ion-col>
+   </ion-row>
+
+  </ng-container>
+  </div>
+  </div>
+  </form>
+</ion-content>

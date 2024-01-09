@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Previous Entries
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <ion-item class="search">
+    <ion-label>
+      <!-- <ion-icon name="search-outline"></ion-icon> -->
+      Select Date
+    </ion-label>
+    <ion-datetime displayFormat="MM/DD/YYYY" [max]="todaysDate" (ionChange)="searchDate($event)" [(ngModel)]="startDate" placeholder="MM/DD/YYYY"></ion-datetime>
+  </ion-item>
+
+  <ion-list>
+    <ion-item detail="false" class="highlight" button *ngFor="let item of arr; let i = index;" (click)="getItem(item)">
+       {{ item[0] }}
+    </ion-item>
+  </ion-list>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="goToLogin()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+    <app-explore-container *ngIf="length()" name="No Entries Available"></app-explore-container>
+</ion-content>

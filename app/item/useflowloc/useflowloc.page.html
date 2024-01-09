@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="back()">
+       <ion-icon name="arrow-back"></ion-icon>
+     </ion-button>
+    </ion-buttons>
+    <ion-title class="title">{{ title }}</ion-title>
+  </ion-toolbar>
+  <ion-progress-bar class="progress-bar" color="secondary" value="{{progress}}"></ion-progress-bar>
+</ion-header>
+<ion-toolbar *ngIf="this.noNetwork == 'false'">
+  <ion-row class="space">{{id}}. {{question}}</ion-row>
+  <ion-searchbar [(ngModel)]="autocomplete.input" (ionInput)="UpdateSearchResults()" placeholder="Search Cross-Streets"  (ionClear)="ClearAutocomplete()"></ion-searchbar>
+</ion-toolbar>
+  <ion-content>
+    <ng-container *ngIf="this.noNetwork == 'true'" >
+      <form (keydown.enter)="$event.preventDefault()" (keyup.enter)="$event.preventDefault()" [formGroup]="loc" (ngSubmit)="sendAddress()">
+      <ion-row class="rowsNormal">
+        <ion-col class="title">
+          {{id}}. {{question}}
+        </ion-col>
+      </ion-row>
+      <ion-row class="rowsNormal">
+      <ion-col><ion-input clearInput="true" formControlName="offlineLocation" type="text" placeholder=" Enter Text" required></ion-input>
+        </ion-col>
+      </ion-row><ion-row>
+        <small *ngIf="showError == 'true'" class="error-message">Please enter an address.</small>
+      </ion-row>
+      <ion-row class="rowsNormal">
+        <ion-col></ion-col>
+         <ion-col>
+      <ion-button type="submit" expand="full" shape="round" size="default" color="primary" (click)="sendAddress()">Next</ion-button>
+    </ion-col>
+    <ion-col></ion-col>
+      </ion-row> </form>
+    </ng-container>
+
+    <ion-list *ngIf="this.noNetwork == 'false'" [hidden]="autocompleteItems.length == 0">
+      <ion-item *ngFor="let item of autocompleteItems" tappable (click)="SelectSearchResult(item)">
+        {{ item.description }}
+      </ion-item>
+    </ion-list>
+    <!-- <ion-button #button class="overlay" id="button" (click)='getLocation()' color="white" icon-only>
+      <ion-icon color="dark" name="locate-outline"></ion-icon>
+    </ion-button> -->
+
+    <div *ngIf="this.noNetwork == 'false'" #map id="map">
+      </div>
+  </ion-content>
+
+
+<!---ion-footer *ngIf='this.formattedAddress != "" && this.noNetwork == "false"'--->
+<ion-footer>
+    <ion-row>
+    <ion-col size="9">
+    <ion-row>
+      Selected Location:
+    </ion-row>
+    <ion-row>
+      {{ formattedAddress }}
+    </ion-row>
+    </ion-col>
+    <ion-col size="3">
+    <ion-button expand="full" shape="round" size="default" color="primary" (click)="sendAddress()">Confirm</ion-button>
+    </ion-col>
+    </ion-row>
+</ion-footer>
