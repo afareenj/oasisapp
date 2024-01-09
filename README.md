@@ -84,7 +84,7 @@ To host all directories and files at once, use command 'chmod -R a+rX *' at root
 
 **Website**: The website is in the Website folder. Host this folder.
 
-**DatabseScrape**: To get information from the database, go to this folder. Must be connected to Hopkins VPN for this program to work. Do not host this folder.
+**DatabaseScrape**: To get information from the database, go to this folder. Must be connected to Hopkins VPN for this program to work. Do not host this folder.
 
 **App**: This is the mobile application. Do not host this folder.
 
