@@ -4,7 +4,7 @@ Oasis App Support and Privacy Policy URL: https://afareenj.github.io/OasisAppPol
 
 # OasisApp
 
-[Node.js](https://nodejs.org/en/download), [XCode](https://developer.apple.com/xcode/), [MySQL](https://dev.mysql.com/downloads/)
+[Node.js](https://nodejs.org/en/download), [XCode](https://developer.apple.com/xcode/), [MySQL](https://dev.mysql.com/downloads/), Android Studio
 
 Please make sure you are signed into the VPN before logging into the MySQL database.
 
