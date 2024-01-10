@@ -64,9 +64,11 @@ Right before running ionic cordova run android --device, run "source ~/.bash_pro
 
 **tab4**: Settings
 
-**tabs**: Modify the tab bar (tab1 - tab4) that appears at bottom of screen.
+**tabs**: Modify the tab bar (tab1 - tab4) that appears at bottom of screen.   
 
-**useflowloc**: googlemaps navigation and survey
+**item**: contains code for survey questions import from database, display within app, and survey submission to database   
+
+**useflowloc**: googlemaps navigation and survey   
 
 In src/assets are pictures and json files for any offline activities.
 
