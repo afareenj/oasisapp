@@ -5,6 +5,58 @@ Oasis App Support and Privacy Policy URL: https://afareenj.github.io/OasisAppPol
 Link to Oasis App Overview Presentation: https://github.com/afareenj/oasisapp/blob/main/Lighthouse%20Oasis%20App%20Presentation.pdf   
 # OasisApp
 
+## `Organization of Project in app folder:`
+**dbLogin**: databaseLogin that uses a Http endpoint API to connect to the MySQL database. To change db login information, change information in src/app/dbLogin/config.ts. To edit database, use logininfo for MySQL found in Website > PHP > login.php
+
+**forgotid**: the forgotID page
+
+**login**: the landing page after the login page
+
+**explore-container**: component example if there are no survey items
+
+**home**: the login page
+
+**tab1**: Previous Entries
+
+**tab2**: NARCAN files
+
+**tab3**: COVID-19 files
+
+**tab4**: Settings
+
+**tabs**: Modify the tab bar (tab1 - tab4) that appears at bottom of screen.   
+
+**item**: contains code for survey questions import from database, display within app, and survey submission to database   
+
+**useflowloc**: googlemaps navigation and survey   
+
+In src/assets are pictures and json files for any offline activities.
+
+## `Software`
+
+1. App Software:
+ - **Languages**: HTML, SCSS, TS
+ - **Software**: Ionic, Angular, Node.js, MySQL for survey info
+
+2. Website Software:
+ - **Languages**: HTML, CSS, JS, SQL, PHP
+ - **Software**: MySQL for survey info
+
+3. Scraping Database to Excel:
+ - **Languages**: Python, SQL
+
+## `Folders`
+
+**OasisAppAPI**: Please host this folder to submit app information to the database and change the endpoint to the hosted site in App > src > app > dbLogin > config.ts.
+
+**Website**: The website is in the Website folder. Host this folder.
+
+**DatabaseScrape**: To get information from the database, go to this folder. Must be connected to Hopkins VPN for this program to work. Do not host this folder.
+
+**App**: This is the mobile application. Do not host this folder.
+
+## `Setup Notes:`
+
 [Node.js](https://nodejs.org/en/download), [XCode](https://developer.apple.com/xcode/), [MySQL](https://dev.mysql.com/downloads/), Android Studio
 
 Please make sure you are signed into the VPN before logging into the MySQL database.
@@ -45,34 +97,6 @@ To build android version, run sudo ionic cordova build android.
 
 Right before running ionic cordova run android --device, run "source ~/.bash_profile"
 
-
-## `Organization of Project in src/app:`
-**dbLogin**: databaseLogin that uses a Http endpoint API to connect to the MySQL database. To change db login information, change information in src/app/dbLogin/config.ts. To edit database, use logininfo for MySQL found in Website > PHP > login.php
-
-**forgotid**: the forgotID page
-
-**login**: the landing page after the login page
-
-**explore-container**: component example if there are no survey items
-
-**home**: the login page
-
-**tab1**: Previous Entries
-
-**tab2**: NARCAN files
-
-**tab3**: COVID-19 files
-
-**tab4**: Settings
-
-**tabs**: Modify the tab bar (tab1 - tab4) that appears at bottom of screen.   
-
-**item**: contains code for survey questions import from database, display within app, and survey submission to database   
-
-**useflowloc**: googlemaps navigation and survey   
-
-In src/assets are pictures and json files for any offline activities.
-
 ## `Special Notes`
 - To use a new googlemaps API key, please edit src > app > index.html.
 
@@ -83,24 +107,3 @@ In src/assets are pictures and json files for any offline activities.
 
 ## `Note`
 To host all directories and files at once, use command 'chmod -R a+rX *' at root directory.
-
-**OasisAppAPI**: Please host this folder to submit app information to the database and change the endpoint to the hosted site in App > src > app > dbLogin > config.ts.
-
-**Website**: The website is in the Website folder. Host this folder.
-
-**DatabaseScrape**: To get information from the database, go to this folder. Must be connected to Hopkins VPN for this program to work. Do not host this folder.
-
-**App**: This is the mobile application. Do not host this folder.
-
-## `Software`
-
-1. App Software:
- - **Languages**: HTML, SCSS, TS
- - **Software**: Ionic, Angular, Node.js, MySQL for survey info
-
-2. Website Software:
- - **Languages**: HTML, CSS, JS, SQL, PHP
- - **Software**: MySQL for survey info
-
-3. Scraping Database to Excel:
- - **Languages**: Python, SQL
