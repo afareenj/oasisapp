@@ -1,7 +1,7 @@
 Oasis App Source Code    
 Published Android App: https://play.google.com/store/apps/details?id=io.ionic.lighthouse   
 Oasis App Support and Privacy Policy URL: https://afareenj.github.io/OasisAppPolicy   
-
+Link to Oasis App Overview Presentation: https://github.com/afareenj/oasisapp/blob/main/Lighthouse%20Oasis%20App%20Presentation.pdf   
 # OasisApp
 
 [Node.js](https://nodejs.org/en/download), [XCode](https://developer.apple.com/xcode/), [MySQL](https://dev.mysql.com/downloads/), Android Studio
