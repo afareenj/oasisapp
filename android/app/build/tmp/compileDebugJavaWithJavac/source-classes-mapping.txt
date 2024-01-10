@@ -1,0 +1,302 @@
+org/apache/cordova/inappbrowser/InAppBrowser.java
+ org.apache.cordova.inappbrowser.InAppBrowser
+ org.apache.cordova.inappbrowser.InAppBrowser$1
+ org.apache.cordova.inappbrowser.InAppBrowser$2
+ org.apache.cordova.inappbrowser.InAppBrowser$3
+ org.apache.cordova.inappbrowser.InAppBrowser$4
+ org.apache.cordova.inappbrowser.InAppBrowser$5
+ org.apache.cordova.inappbrowser.InAppBrowser$6
+ org.apache.cordova.inappbrowser.InAppBrowser$6$1
+ org.apache.cordova.inappbrowser.InAppBrowser$7
+ org.apache.cordova.inappbrowser.InAppBrowser$7$1
+ org.apache.cordova.inappbrowser.InAppBrowser$7$1JsObject
+ org.apache.cordova.inappbrowser.InAppBrowser$7$2
+ org.apache.cordova.inappbrowser.InAppBrowser$7$3
+ org.apache.cordova.inappbrowser.InAppBrowser$7$4
+ org.apache.cordova.inappbrowser.InAppBrowser$7$5
+ org.apache.cordova.inappbrowser.InAppBrowser$InAppBrowserClient
+org/apache/cordova/file/InvalidModificationException.java
+ org.apache.cordova.file.InvalidModificationException
+org/apache/cordova/device/Device.java
+ org.apache.cordova.device.Device
+io/sqlc/SQLiteConnectorDatabase.java
+ io.sqlc.SQLiteConnectorDatabase
+de/appplant/cordova/emailcomposer/Provider.java
+ de.appplant.cordova.emailcomposer.Provider
+com/silkimen/cordovahttp/CordovaHttpResponse.java
+ com.silkimen.cordovahttp.CordovaHttpResponse
+de/appplant/cordova/plugin/notification/action/ActionGroup.java
+ de.appplant.cordova.plugin.notification.action.ActionGroup
+nl/xservices/plugins/Calendar.java
+ nl.xservices.plugins.Calendar
+ nl.xservices.plugins.Calendar$1
+ nl.xservices.plugins.Calendar$10
+ nl.xservices.plugins.Calendar$11
+ nl.xservices.plugins.Calendar$2
+ nl.xservices.plugins.Calendar$3
+ nl.xservices.plugins.Calendar$4
+ nl.xservices.plugins.Calendar$5
+ nl.xservices.plugins.Calendar$6
+ nl.xservices.plugins.Calendar$7
+ nl.xservices.plugins.Calendar$8
+ nl.xservices.plugins.Calendar$9
+de/appplant/cordova/plugin/notification/receiver/AbstractClickReceiver.java
+ de.appplant.cordova.plugin.notification.receiver.AbstractClickReceiver
+org/apache/cordova/file/FileUtils.java
+ org.apache.cordova.file.FileUtils
+ org.apache.cordova.file.FileUtils$1
+ org.apache.cordova.file.FileUtils$10
+ org.apache.cordova.file.FileUtils$11
+ org.apache.cordova.file.FileUtils$12
+ org.apache.cordova.file.FileUtils$13
+ org.apache.cordova.file.FileUtils$14
+ org.apache.cordova.file.FileUtils$15
+ org.apache.cordova.file.FileUtils$16
+ org.apache.cordova.file.FileUtils$17
+ org.apache.cordova.file.FileUtils$18
+ org.apache.cordova.file.FileUtils$19
+ org.apache.cordova.file.FileUtils$2
+ org.apache.cordova.file.FileUtils$20
+ org.apache.cordova.file.FileUtils$21
+ org.apache.cordova.file.FileUtils$22
+ org.apache.cordova.file.FileUtils$23
+ org.apache.cordova.file.FileUtils$24
+ org.apache.cordova.file.FileUtils$25
+ org.apache.cordova.file.FileUtils$26
+ org.apache.cordova.file.FileUtils$27
+ org.apache.cordova.file.FileUtils$28
+ org.apache.cordova.file.FileUtils$29
+ org.apache.cordova.file.FileUtils$3
+ org.apache.cordova.file.FileUtils$4
+ org.apache.cordova.file.FileUtils$5
+ org.apache.cordova.file.FileUtils$6
+ org.apache.cordova.file.FileUtils$7
+ org.apache.cordova.file.FileUtils$8
+ org.apache.cordova.file.FileUtils$9
+ org.apache.cordova.file.FileUtils$FileOp
+org/apache/cordova/file/ContentFilesystem.java
+ org.apache.cordova.file.ContentFilesystem
+com/silkimen/cordovahttp/CordovaHttpOperation.java
+ com.silkimen.cordovahttp.CordovaHttpOperation
+com/silkimen/http/TLSSocketFactory.java
+ com.silkimen.http.TLSSocketFactory
+cordova/plugins/screenorientation/CDVOrientation.java
+ cordova.plugins.screenorientation.CDVOrientation
+io/ionic/lighthouse/MainActivity.java
+ io.ionic.lighthouse.MainActivity
+de/appplant/cordova/plugin/notification/trigger/IntervalTrigger.java
+ de.appplant.cordova.plugin.notification.trigger.IntervalTrigger
+ de.appplant.cordova.plugin.notification.trigger.IntervalTrigger$1
+de/appplant/cordova/plugin/notification/receiver/AbstractTriggerReceiver.java
+ de.appplant.cordova.plugin.notification.receiver.AbstractTriggerReceiver
+de/appplant/cordova/plugin/notification/trigger/DateTrigger.java
+ de.appplant.cordova.plugin.notification.trigger.DateTrigger
+ de.appplant.cordova.plugin.notification.trigger.DateTrigger$Unit
+io/sqlc/SQLitePlugin.java
+ io.sqlc.SQLitePlugin
+ io.sqlc.SQLitePlugin$1
+ io.sqlc.SQLitePlugin$Action
+ io.sqlc.SQLitePlugin$DBQuery
+ io.sqlc.SQLitePlugin$DBRunner
+de/appplant/cordova/plugin/localnotification/LocalNotification.java
+ de.appplant.cordova.plugin.localnotification.LocalNotification
+ de.appplant.cordova.plugin.localnotification.LocalNotification$1
+ de.appplant.cordova.plugin.localnotification.LocalNotification$2
+ de.appplant.cordova.plugin.localnotification.LocalNotification$3
+com/ionicframework/cordova/webview/IonicWebView.java
+ com.ionicframework.cordova.webview.IonicWebView
+ com.ionicframework.cordova.webview.IonicWebView$1
+com/silkimen/http/HttpBodyDecoder.java
+ com.silkimen.http.HttpBodyDecoder
+com/ionicframework/cordova/webview/IonicWebViewEngine.java
+ com.ionicframework.cordova.webview.IonicWebViewEngine
+ com.ionicframework.cordova.webview.IonicWebViewEngine$1
+ com.ionicframework.cordova.webview.IonicWebViewEngine$ServerClient
+org/apache/cordova/whitelist/WhitelistPlugin.java
+ org.apache.cordova.whitelist.WhitelistPlugin
+ org.apache.cordova.whitelist.WhitelistPlugin$1
+ org.apache.cordova.whitelist.WhitelistPlugin$CustomConfigXmlParser
+org/apache/cordova/geolocation/Geolocation.java
+ org.apache.cordova.geolocation.Geolocation
+com/silkimen/cordovahttp/CordovaHttpBase.java
+ com.silkimen.cordovahttp.CordovaHttpBase
+de/appplant/cordova/plugin/notification/Builder.java
+ de.appplant.cordova.plugin.notification.Builder
+org/apache/cordova/file/Filesystem.java
+ org.apache.cordova.file.Filesystem
+ org.apache.cordova.file.Filesystem$LimitedInputStream
+ org.apache.cordova.file.Filesystem$ReadFileCallback
+org/apache/cordova/file/TypeMismatchException.java
+ org.apache.cordova.file.TypeMismatchException
+de/appplant/cordova/plugin/notification/trigger/MatchTrigger.java
+ de.appplant.cordova.plugin.notification.trigger.MatchTrigger
+ de.appplant.cordova.plugin.notification.trigger.MatchTrigger$1
+com/silkimen/cordovahttp/CordovaHttpUpload.java
+ com.silkimen.cordovahttp.CordovaHttpUpload
+org/apache/cordova/file/LocalFilesystemURL.java
+ org.apache.cordova.file.LocalFilesystemURL
+org/apache/cordova/file/DirectoryManager.java
+ org.apache.cordova.file.DirectoryManager
+de/appplant/cordova/plugin/badge/Badge.java
+ de.appplant.cordova.plugin.badge.Badge
+ de.appplant.cordova.plugin.badge.Badge$1
+ de.appplant.cordova.plugin.badge.Badge$2
+ de.appplant.cordova.plugin.badge.Badge$3
+ de.appplant.cordova.plugin.badge.Badge$4
+ de.appplant.cordova.plugin.badge.Badge$5
+ de.appplant.cordova.plugin.badge.Badge$6
+nl/xservices/plugins/accessor/AbstractCalendarAccessor.java
+ nl.xservices.plugins.accessor.AbstractCalendarAccessor
+ nl.xservices.plugins.accessor.AbstractCalendarAccessor$Attendee
+ nl.xservices.plugins.accessor.AbstractCalendarAccessor$Event
+ nl.xservices.plugins.accessor.AbstractCalendarAccessor$KeyIndex
+org/apache/cordova/file/LocalFilesystem.java
+ org.apache.cordova.file.LocalFilesystem
+de/appplant/cordova/plugin/notification/Manager.java
+ de.appplant.cordova.plugin.notification.Manager
+com/ionicframework/cordova/webview/AndroidProtocolHandler.java
+ com.ionicframework.cordova.webview.AndroidProtocolHandler
+com/ionicframework/cordova/webview/WebViewLocalServer.java
+ com.ionicframework.cordova.webview.WebViewLocalServer
+ com.ionicframework.cordova.webview.WebViewLocalServer$1
+ com.ionicframework.cordova.webview.WebViewLocalServer$2
+ com.ionicframework.cordova.webview.WebViewLocalServer$AssetHostingDetails
+ com.ionicframework.cordova.webview.WebViewLocalServer$LazyInputStream
+ com.ionicframework.cordova.webview.WebViewLocalServer$LollipopLazyInputStream
+ com.ionicframework.cordova.webview.WebViewLocalServer$PathHandler
+io/ionic/keyboard/CDVIonicKeyboard.java
+ io.ionic.keyboard.CDVIonicKeyboard
+ io.ionic.keyboard.CDVIonicKeyboard$1
+ io.ionic.keyboard.CDVIonicKeyboard$2
+ io.ionic.keyboard.CDVIonicKeyboard$3
+ io.ionic.keyboard.CDVIonicKeyboard$3$1
+de/appplant/cordova/plugin/badge/BadgeImpl.java
+ de.appplant.cordova.plugin.badge.BadgeImpl
+org/apache/cordova/networkinformation/NetworkManager.java
+ org.apache.cordova.networkinformation.NetworkManager
+ org.apache.cordova.networkinformation.NetworkManager$1
+org/apache/cordova/splashscreen/SplashScreen.java
+ org.apache.cordova.splashscreen.SplashScreen
+ org.apache.cordova.splashscreen.SplashScreen$1
+ org.apache.cordova.splashscreen.SplashScreen$2
+ org.apache.cordova.splashscreen.SplashScreen$3
+ org.apache.cordova.splashscreen.SplashScreen$4
+ org.apache.cordova.splashscreen.SplashScreen$4$1
+ org.apache.cordova.splashscreen.SplashScreen$5
+ org.apache.cordova.splashscreen.SplashScreen$5$1
+ org.apache.cordova.splashscreen.SplashScreen$6
+ org.apache.cordova.splashscreen.SplashScreen$6$1
+ org.apache.cordova.splashscreen.SplashScreen$7
+de/appplant/cordova/plugin/notification/receiver/AbstractClearReceiver.java
+ de.appplant.cordova.plugin.notification.receiver.AbstractClearReceiver
+org/apache/cordova/file/NoModificationAllowedException.java
+ org.apache.cordova.file.NoModificationAllowedException
+com/silkimen/http/KeyChainKeyManager.java
+ com.silkimen.http.KeyChainKeyManager
+org/apache/cordova/inappbrowser/InAppChromeClient.java
+ org.apache.cordova.inappbrowser.InAppChromeClient
+ org.apache.cordova.inappbrowser.InAppChromeClient$1
+com/silkimen/http/TLSConfiguration.java
+ com.silkimen.http.TLSConfiguration
+com/silkimen/cordovahttp/CordovaObservableCallbackContext.java
+ com.silkimen.cordovahttp.CordovaObservableCallbackContext
+com/rohithvaranasi/callnumber/CFCallNumber.java
+ com.rohithvaranasi.callnumber.CFCallNumber
+org/apache/cordova/file/PendingRequests.java
+ org.apache.cordova.file.PendingRequests
+ org.apache.cordova.file.PendingRequests$1
+ org.apache.cordova.file.PendingRequests$Request
+org/apache/cordova/statusbar/StatusBar.java
+ org.apache.cordova.statusbar.StatusBar
+ org.apache.cordova.statusbar.StatusBar$1
+ org.apache.cordova.statusbar.StatusBar$2
+ org.apache.cordova.statusbar.StatusBar$3
+ org.apache.cordova.statusbar.StatusBar$4
+ org.apache.cordova.statusbar.StatusBar$5
+ org.apache.cordova.statusbar.StatusBar$6
+ org.apache.cordova.statusbar.StatusBar$7
+ org.apache.cordova.statusbar.StatusBar$8
+ org.apache.cordova.statusbar.StatusBar$9
+org/apache/cordova/file/FileExistsException.java
+ org.apache.cordova.file.FileExistsException
+de/appplant/cordova/plugin/notification/Request.java
+ de.appplant.cordova.plugin.notification.Request
+com/silkimen/http/HttpRequest.java
+ com.silkimen.http.HttpRequest
+ com.silkimen.http.HttpRequest$1
+ com.silkimen.http.HttpRequest$2
+ com.silkimen.http.HttpRequest$3
+ com.silkimen.http.HttpRequest$4
+ com.silkimen.http.HttpRequest$5
+ com.silkimen.http.HttpRequest$6
+ com.silkimen.http.HttpRequest$7
+ com.silkimen.http.HttpRequest$8
+ com.silkimen.http.HttpRequest$Base64
+ com.silkimen.http.HttpRequest$CloseOperation
+ com.silkimen.http.HttpRequest$ConnectionFactory
+ com.silkimen.http.HttpRequest$ConnectionFactory$1
+ com.silkimen.http.HttpRequest$FlushOperation
+ com.silkimen.http.HttpRequest$HttpRequestException
+ com.silkimen.http.HttpRequest$Operation
+ com.silkimen.http.HttpRequest$RequestOutputStream
+ com.silkimen.http.HttpRequest$UploadProgress
+ com.silkimen.http.HttpRequest$UploadProgress$1
+nl/xservices/plugins/accessor/LegacyCalendarAccessor.java
+ nl.xservices.plugins.accessor.LegacyCalendarAccessor
+de/appplant/cordova/emailcomposer/Impl.java
+ de.appplant.cordova.emailcomposer.Impl
+com/silkimen/cordovahttp/CordovaClientAuth.java
+ com.silkimen.cordovahttp.CordovaClientAuth
+org/apache/cordova/file/EncodingException.java
+ org.apache.cordova.file.EncodingException
+com/ionicframework/cordova/webview/UriMatcher.java
+ com.ionicframework.cordova.webview.UriMatcher
+de/appplant/cordova/plugin/localnotification/ClearReceiver.java
+ de.appplant.cordova.plugin.localnotification.ClearReceiver
+cordova/plugin/nativegeocoder/NativeGeocoder.java
+ cordova.plugin.nativegeocoder.NativeGeocoder
+ cordova.plugin.nativegeocoder.NativeGeocoderOptions
+nl/xservices/plugins/accessor/CalendarProviderAccessor.java
+ nl.xservices.plugins.accessor.CalendarProviderAccessor
+org/apache/cordova/file/AssetFilesystem.java
+ org.apache.cordova.file.AssetFilesystem
+com/silkimen/cordovahttp/CordovaHttpPlugin.java
+ com.silkimen.cordovahttp.CordovaHttpPlugin
+com/silkimen/cordovahttp/CordovaHttpDownload.java
+ com.silkimen.cordovahttp.CordovaHttpDownload
+io/ionic/lighthouse/BuildConfig.java
+ io.ionic.lighthouse.BuildConfig
+de/appplant/cordova/plugin/localnotification/TriggerReceiver.java
+ de.appplant.cordova.plugin.localnotification.TriggerReceiver
+io/sqlc/SQLiteAndroidDatabase.java
+ io.sqlc.SQLiteAndroidDatabase
+ io.sqlc.SQLiteAndroidDatabase$QueryType
+de/appplant/cordova/plugin/notification/Options.java
+ de.appplant.cordova.plugin.notification.Options
+de/appplant/cordova/emailcomposer/EmailComposer.java
+ de.appplant.cordova.emailcomposer.EmailComposer
+ de.appplant.cordova.emailcomposer.EmailComposer$1
+ de.appplant.cordova.emailcomposer.EmailComposer$2
+ de.appplant.cordova.emailcomposer.EmailComposer$3
+ de.appplant.cordova.emailcomposer.EmailComposer$4
+com/silkimen/http/JsonUtils.java
+ com.silkimen.http.JsonUtils
+de/appplant/cordova/plugin/notification/Notification.java
+ de.appplant.cordova.plugin.notification.Notification
+ de.appplant.cordova.plugin.notification.Notification$Type
+de/appplant/cordova/plugin/notification/action/Action.java
+ de.appplant.cordova.plugin.notification.action.Action
+org/apache/cordova/inappbrowser/InAppBrowserDialog.java
+ org.apache.cordova.inappbrowser.InAppBrowserDialog
+de/appplant/cordova/plugin/notification/util/AssetUtil.java
+ de.appplant.cordova.plugin.notification.util.AssetUtil
+de/appplant/cordova/plugin/localnotification/ClickReceiver.java
+ de.appplant.cordova.plugin.localnotification.ClickReceiver
+de/appplant/cordova/plugin/notification/util/AssetProvider.java
+ de.appplant.cordova.plugin.notification.util.AssetProvider
+com/silkimen/cordovahttp/CordovaServerTrust.java
+ com.silkimen.cordovahttp.CordovaServerTrust
+ com.silkimen.cordovahttp.CordovaServerTrust$1
+ com.silkimen.cordovahttp.CordovaServerTrust$2
+de/appplant/cordova/emailcomposer/AssetUtil.java
+ de.appplant.cordova.emailcomposer.AssetUtil
