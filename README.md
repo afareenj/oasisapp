@@ -10,19 +10,19 @@ Link to Oasis App Overview Presentation: https://github.com/afareenj/oasisapp/bl
 
 **forgotid**: the forgotID page
 
-**login**: the landing page after the login page
+**login**: the landing page after the login page where button to enter survey is accessible
 
 **explore-container**: component example if there are no survey items
 
 **home**: the login page
 
-**tab1**: Previous Entries
+**tab1**: Previous Entries: view previous survey entries   
 
-**tab2**: NARCAN files
+**tab2**: NARCAN finder lookup tool
 
-**tab3**: COVID-19 files
+**tab3**: COVID-19 test finder lookup tool
 
-**tab4**: Settings
+**tab4**: Settings: adjust notification settings
 
 **tabs**: Modify the tab bar (tab1 - tab4) that appears at bottom of screen.   
 
