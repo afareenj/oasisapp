@@ -1,0 +1,21 @@
+id,surveyVersion,question,answerForm,answers,switch
+1,1,"How many times did you use opioids today? (By this, we mean how many times did you use: heroin, fentanyl or prescription opioids to get high?)","Multiple Choice","0,1,2, 3,4,5,6,7,8,9,10,>10","12, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1"
+2,1,"Did you use at any location outside of your home today? ","Multiple Choice","Yes,No","2, 5"
+3,1,"Thinking about the [random] place you used opioids today that was outside of your own home, where was it?","Multiple Choice","Someone Else's House,Street/Alley,Park,Abandoned Building,Public Bathroom,Car,Other","4,4,4,4,4,4,3"
+4,1,"You selected 'Other' for the last question (where was the [random] place that you used opioids?). Type in your answer to that question.",Text,,4
+5,1,"Thinking about the [random] time you used opioids today, please enter the cross-streets of that location:",Text,Map,5
+6,1,"Thinking about the [random] time you used opioids today, what drugs did you use at this location? Select all that apply.",Multi-Select,"Heroin,Fentanyl,Powdered Cocaine,Crack Cocaine,Prescription Opiates,Buprenorphine/Bupes,Methamphetamine,Marijuana ","6,6,6,6,6,6,6,6"
+7,1,"Thinking about the [random] time you used opioids today, were you using alone?","Multiple Choice","Yes,No","7,8"
+8,1,"Thinking about the [random] time you used opioids today, which of these applied to you?",Matrix,"I told someone I was using,I asked someone to check-in on me,used fentanyl test strips,had narcan on me,used a small amount first to test strength of drugs |yes,no",11
+9,1,"Thinking about the [random] time you used opioids today, how many people were injecting (including yourself)?","Multiple Choice","0,1,2,3,4,5,6,7,8,9,10,>10","11,10,9,9,9,9,9,9,9,9,9,9"
+10,1,"Thinking about the [random] time you used opioids today, did you see or do any of these behaviors?",Matrix,"share cookers,share syringes,used fentanyl test strips,talk about how to prevent an overdose,used a small amount first to test strength of drugs |Yes,No,Don't Know","10,10,10,10,10"
+11,1,"Thinking about the [random] time you used opioids today, were these things available?",Matrix,"narcan,clean cooker,clean water,clean syringes,fentanyl test strips |Yes- I Had It,Yes- Someone Else Had It,No,Don’t Know ","11,11,11,11,11"
+12,1,"Thinking about the [random] time you used opioids today, how many people were close enough to give you Narcan or call 911 if you needed it? For example, in the same house/building or on the same block?",Number,,12
+13,1,"Did you witness an overdose today?","Multiple Choice","Yes,No","13,19"
+14,1,"Please enter the cross-streets of the location where you witnessed an overdose today:",Text,Map,14
+15,1,"Who was the person who overdosed? (select one option) ","Multiple Choice","Drug buddy, friend,family member,partner,associate,myself,someone I don't know","15,15,15,15,15,15,15"
+16,1,"Was 911 called?","Multiple Choice","Yes,No,Don't Know","16,16, 16"
+17,1,"Did anyone give the person Narcan?","Multiple Choice","Yes,No,Don't Know","17,18,18"
+18,1,"Who administered Narcan?",Multi-Select,"Paramedics/police,Me,Someone Else","18,18,18"
+19,1,"Did the person wake up?","Multiple Choice","Yes,No,Don't Know","19, 19, 19"
+20,1,"How are you feeling today?",Emoji,"1, 2, 3, 4, 5","-1, -1, -1, -1, -1"
