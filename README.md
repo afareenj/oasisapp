@@ -1,6 +1,7 @@
 Oasis App Source Code    
 Published Android App: https://play.google.com/store/apps/details?id=io.ionic.lighthouse   
 Login Information to demo the app: Username: testUser, Password: userID   
+Published iOS App: https://apps.apple.com/us/app/oasis-app/id1604441352   
 Oasis App Support and Privacy Policy URL: https://afareenj.github.io/OasisAppPolicy   
 Link to Oasis App Overview Presentation: https://github.com/afareenj/oasisapp/blob/main/Lighthouse%20Oasis%20App%20Presentation.pdf   
 # OasisApp
