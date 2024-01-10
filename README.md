@@ -6,7 +6,7 @@ Link to Oasis App Overview Presentation: https://github.com/afareenj/oasisapp/bl
 # OasisApp
 
 ## `Organization of Project in app folder:`
-**dbLogin**: databaseLogin that uses a Http endpoint API to connect to the MySQL database. To change db login information, change information in src/app/dbLogin/config.ts. To edit database, use logininfo for MySQL found in Website > PHP > login.php
+**dbLogin**: databaseLogin that uses a Http endpoint API to connect to the MySQL database.
 
 **forgotid**: the forgotID page
 
